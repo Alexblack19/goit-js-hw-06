@@ -7,8 +7,17 @@
 // });
 // console.log(newArr);
 
-const categoriesNumber = document.querySelectorAll("h2").length;
+const categoriesNumber = document.querySelectorAll(".item h2");
 console.log('Number of categories:', categoriesNumber);
+console.log(categoriesNumber);
+
+document.querySelectorAll('.item ul').forEach(element => {
+    console.log(element.textContent);
+
+    
+});
+
+
 
 const test = document.querySelector("h2");
 console.log(test.textContent);
