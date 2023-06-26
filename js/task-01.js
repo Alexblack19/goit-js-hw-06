@@ -7,8 +7,12 @@
 // });
 // console.log(newArr);
 
-const categories = document.querySelectorAll(".item").children;
-console.dir(categories);
+const categoriesNumber = document.querySelectorAll("h2").length;
+console.log('Number of categories:', categoriesNumber);
 
-const categoriesArr = [...categories]
-console.dir(categoriesArr)
+const test = document.querySelectorAll("h2");
+console.log(test);
+
+
+
+
