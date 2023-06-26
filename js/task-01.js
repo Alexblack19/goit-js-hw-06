@@ -8,19 +8,15 @@
 // console.log(newArr);
 
 const categoriesNumber = document.querySelectorAll(".item h2");
-console.log('Number of categories:', categoriesNumber);
-console.log(categoriesNumber);
+console.log('Number of categories:', categoriesNumber.length);
 
 document.querySelectorAll('.item ul').forEach(element => {
-    console.log(element.textContent);
-
-    
+    console.log(categoriesNumber.textContent);
+    console.log(element.textContent);    
 });
 
 
 
-const test = document.querySelector("h2");
-console.log(test.textContent);
 
 
 
