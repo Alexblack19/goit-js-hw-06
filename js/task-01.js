@@ -1,23 +1,10 @@
-// const arr = [23, 56, 7, 9, 90, 45, 87];
-// const newArr = [];
-// arr.forEach((element) => {
-//   if (element > 10) {
-//     newArr.push(element);
-//   }
-// });
-// console.log(newArr);
+const categoriesAll = document.querySelectorAll('.item');
+console.log(`Number of categories: ${categoriesAll.length}`);
 
-const categoriesNumber = document.querySelectorAll(".item").length;
-console.log('Number of categories:', categoriesNumber);
+categoriesAll.forEach(categories => {
+    const categoriesName = categories.firstElementChild;
+    console.log(`Category: ${categoriesName.textContent}`);    
 
-document.querySelectorAll('.item ul').forEach(element => {
-    
-    console.dir(element);    
+    const elementsNumber = categoriesName.nextElementSibling.children;
+    console.log(`Elements: ${elementsNumber.length}`);    
 });
-
-
-
-
-
-
-
