@@ -7,37 +7,11 @@ const ingredients = [
   "Condiments",
 ];
 
-// const ingredientItemArr = [];
-// ingredients.forEach((ingredient) => {
-//   const ingredientItem = document.createElement("li");
-//   ingredientItem.classList.add("item");
-//   ingredientItem.textContent = `${ingredient}`;
-//   console.log(ingredientItem);
-//   return ingredientItemArr.push(ingredientItem);
-// });
-// console.log(ingredientItemArr.join(""));
-// const ingredientsList = document.querySelector("#ingredients");
-// ingredientsList.insertAdjacentHTML("beforeend", ingredientItemArr.join(" "));
-
-const ingredientsList = document.querySelector("#ingredients");
-const ingredientItemArr = ingredients.map((ingredient) => {
-  const ingredientItem = document.createElement("li");
-  ingredientItem.classList.add("item");
-  ingredientItem.textContent = `${ingredient}`;
-  //==========================
-  console.log(ingredientItem);
-  //==========================  
-  return ingredientItem
+const listEl = document.querySelector("#ingredients");
+const itemArr = ingredients.map(ingredient => {
+  const itemEl = document.createElement("li");
+  itemEl.classList.add("item");
+  itemEl.textContent = `${ingredient}`;  
+  return itemEl;
 });
-//=======================================
-// console.log(ingredientItemArr);
-
-console.log(ingredientItemArr);
-//=======================================
-ingredientsList.insertAdjacentHTML("beforeend", ingredientItemArr);
-// ingredientsList.insertAdjacentHTML("beforeend", ingredientItem);
-
-// const arr = ["Mango", "Ajax", "Poly"];
-// console.log(arr);
-// const string = arr.join(" ");
-// console.log(string);
+listEl.append(...itemArr);
