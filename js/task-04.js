@@ -9,7 +9,7 @@ const spanValueEl = document.querySelector("#value");
 
 const handleClickDecr = () => {
   counterValue -= 1;
-  spanValueEl.textContent = counterValue;
+  spanValueEl.textContent = counterValue;  
 };
 
 const handleClickIncr = () => {
