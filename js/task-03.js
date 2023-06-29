@@ -16,19 +16,14 @@ const images = [
 //*Варіант 1
 //
 const listEl = document.querySelector(".gallery");
-listEl.style.listStyle = "none";
-listEl.style.display = "flex";
-listEl.style.flexWrap = "wrap";
-listEl.style.justifyContent = "center";
-listEl.style.gap = "20px";
-listEl.style.alignItems = "center";
-
-const imagesArr = images.map((image) => {
-  const imgItemEl = `<li class = "item">
+const imagesArr = images
+  .map((image) => {
+    const imgItemEl = `<li class = "item">
       <img src="${image.url}" alt="${image.alt}"/>
     </li>`;
-  return imgItemEl;
-});
+    return imgItemEl;
+  })
+  .join("");
 listEl.insertAdjacentHTML("beforeend", imagesArr);
 //
 //*===================================
@@ -36,21 +31,15 @@ listEl.insertAdjacentHTML("beforeend", imagesArr);
 //*Варіант 2
 //
 // const listEl = document.querySelector(".gallery");
-// listEl.style.listStyle = "none";
-// listEl.style.display = "flex";
-// listEl.style.flexWrap = "wrap";
-// listEl.style.justifyContent = "center";
-// listEl.style.gap = "20px";
-// listEl.style.alignItems = "center";
-
 // const makeGalleryImg = (imagesArr) => {
-//   return imagesArr.map((image) => {
-//     const imgItemEl = `<li class = "item">
+//   return imagesArr
+//     .map((image) => {
+//       const imgItemEl = `<li class = "item">
 //       <img src="${image.url}" alt="${image.alt}"/>
 //     </li>`;
-//     return imgItemEl;
-//   });
+//       return imgItemEl;
+//     })
+//     .join("");
 // };
-
 // const imagesListArr = makeGalleryImg(images);
 // listEl.insertAdjacentHTML("beforeend", imagesListArr);

@@ -9,9 +9,9 @@ const ingredients = [
 
 const listEl = document.querySelector("#ingredients");
 const itemArr = ingredients.map((ingredient) => {
-  const itemEl = document.createElement("li");
-  itemEl.classList.add("item");
-  itemEl.textContent = `${ingredient}`;
+  const ingredientItemEl = document.createElement("li");
+  ingredientItemEl.classList.add("item");
+  ingredientItemEl.textContent = `${ingredient}`;
   return itemEl;
 });
 listEl.append(...itemArr);
