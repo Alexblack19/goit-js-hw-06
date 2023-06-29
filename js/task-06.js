@@ -1,19 +1,25 @@
 const inputEl = document.querySelector("#validation-input");
 
-// const onValidationInput = (event) => {
-//   if (inputEl.dataset.length === 6) {
-//     console.log("Hello");
-//     // inputEl.classList.add("valid");
-//     return;
-//   }
-//   console.log("No");
-//   //   inputEl.classList.add("invalid");
-// };
-
-// inputEl.addEventListener("blur", onValidationInput);
+inputEl.addEventListener("input", (event) => {
+  const addTextLength = event.currentTarget.value.length;
+  return addTextLength;
+});
+console.log(addTextLength);
 
 
-document.addEventListener("keydown", event => {
-    console.log("Keydown: ", event);
-  });
-  
+
+
+
+
+
+const onValidationInput = () => {
+  if (Number(inputEl.dataset.length) === i) {
+    console.log("Hello");
+    // inputEl.classList.add("valid");
+    return;
+  }
+  console.log("No");
+  //   inputEl.classList.add("invalid");
+};
+
+inputEl.addEventListener("blur", onValidationInput);
