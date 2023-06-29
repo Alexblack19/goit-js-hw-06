@@ -12,9 +12,9 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-//
-//*Варіант 1
-//
+//===========
+//* Варіант 1
+//===========
 const listEl = document.querySelector(".gallery");
 const imagesArr = images
   .map((image) => {
@@ -26,11 +26,10 @@ const imagesArr = images
   .join(" ");
 listEl.insertAdjacentHTML("beforeend", imagesArr);
 console.log(imagesArr);
-//
-//*===================================
-//
-//*Варіант 2
-//
+
+//===========
+//* Варіант 2
+//===========
 // const listEl = document.querySelector(".gallery");
 // const makeGalleryImg = (imagesArr) => {
 //   return imagesArr
