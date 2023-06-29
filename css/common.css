@@ -23,6 +23,18 @@ button {
   cursor: pointer;
 }
 
+/** CSS task-03 */
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+}
+
 .gallery {
   list-style: none;
   display: flex;
@@ -31,3 +43,6 @@ button {
   gap: 20px;
   align-items: center;
 }
+
+
+

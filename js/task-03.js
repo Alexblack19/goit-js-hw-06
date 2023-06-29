@@ -23,8 +23,9 @@ const imagesArr = images
     </li>`;
     return imgItemEl;
   })
-  .join("");
+  .join(" ");
 listEl.insertAdjacentHTML("beforeend", imagesArr);
+console.log(imagesArr);
 //
 //*===================================
 //
@@ -39,7 +40,7 @@ listEl.insertAdjacentHTML("beforeend", imagesArr);
 //     </li>`;
 //       return imgItemEl;
 //     })
-//     .join("");
+//     .join(" ");
 // };
 // const imagesListArr = makeGalleryImg(images);
 // listEl.insertAdjacentHTML("beforeend", imagesListArr);
