@@ -7,18 +7,18 @@ const btnDecrEl = document.querySelector('button[data-action = "decrement"]');
 const btnIncrEl = document.querySelector('button[data-action = "increment"]');
 const spanValueEl = document.querySelector("#value");
 
-const handleBtnClickDecr = () => {
+const onBtnClickDecr = () => {
   counterValue -= 1;
   spanValueEl.textContent = counterValue;  
 };
 
-const handleBtnClickIncr = () => {
+const onBtnClickIncr = () => {
   counterValue += 1;
   spanValueEl.textContent = counterValue;
 };
 
-btnDecrEl.addEventListener("click", handleBtnClickDecr);
-btnIncrEl.addEventListener("click", handleBtnClickIncr);
+btnDecrEl.addEventListener("click", onBtnClickDecr);
+btnIncrEl.addEventListener("click", onBtnClickIncr);
 
 //===========
 //* Варіант 2
@@ -29,15 +29,15 @@ btnIncrEl.addEventListener("click", handleBtnClickIncr);
 // const btnIncrEl = document.querySelector('button[data-action = "increment"]');
 // const spanValueEl = document.querySelector("#value");
 
-// const handleBtnClickDecr = () => {
+// const onBtnClickDecr = () => {
 //   counterValue += Number(btnDecrEl.textContent);
 //   spanValueEl.textContent = counterValue;
 // };
 
-// const handleBtnClickIncr = () => {
+// const onBtnClickIncr = () => {
 //   counterValue += Number(btnIncrEl.textContent);
 //   spanValueEl.textContent = counterValue;
 // };
 
-// btnDecrEl.addEventListener("click", handleBtnClickDecr);
-// btnIncrEl.addEventListener("click", handleBtnClickIncr);
+// btnDecrEl.addEventListener("click", onBtnClickDecr);
+// btnIncrEl.addEventListener("click", onBtnClickIncr);
