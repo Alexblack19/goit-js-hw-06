@@ -3,7 +3,9 @@
 //============
 const inputEl = document.querySelector("#validation-input");
 
-const onInputBlur = () => {
+inputEl.addEventListener("blur", onInputBlur);
+
+function onInputBlur() {
   const addTextLength = inputEl.value.trim().length;
   const dataTextLength = Number(inputEl.getAttribute("data-length"));
 
@@ -14,16 +16,16 @@ const onInputBlur = () => {
     inputEl.classList.remove("valid");
     inputEl.classList.add("invalid");
   }
-};
-
-inputEl.addEventListener("blur", onInputBlur);
+}
 
 //============
 //* Варіант 2
 //============
 // const inputEl = document.querySelector("#validation-input");
 
-// const onInputBlur = (event) => {
+// inputEl.addEventListener("blur", onInputBlur);
+
+// function onInputBlur(event) {
 //   const addTextLength = event.target.value.trim().length;
 //   const dataTextLength = Number(inputEl.getAttribute("data-length"));
 
@@ -34,6 +36,4 @@ inputEl.addEventListener("blur", onInputBlur);
 //     inputEl.classList.remove("valid");
 //     inputEl.classList.add("invalid");
 //   }
-// };
-
-// inputEl.addEventListener("blur", onInputBlur);
+// }
