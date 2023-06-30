@@ -3,3 +3,25 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+
+const inputEl = document.querySelector('[type="number"]')
+console.log(inputEl.value);
+
+
+const btnCreateEl = document.querySelector('button[data-create]');
+console.log(btnCreateEl);
+const btnDestroyEl = document.querySelector('button[data-destroy]');
+console.log(btnDestroyEl);
+const divboxes = document.querySelector("#boxes");
+console.log(divboxes);
+
+// const amount = btnCreateEl.
+
+
+
+// createBoxes(amount) {
+//   btCreatenEl.addEventListener('click', (event)=>{
+
+//   })
+// }
