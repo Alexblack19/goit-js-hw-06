@@ -25,7 +25,7 @@ function onInputBlur() {
 
 // inputEl.addEventListener("blur", onInputBlur);
 
-// function onInputBlur(event) {
+// function onInputBlur(event) {  
 //   const addTextLength = event.target.value.trim().length;
 //   const dataTextLength = Number(inputEl.getAttribute("data-length"));
 
