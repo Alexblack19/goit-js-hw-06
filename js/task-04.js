@@ -1,7 +1,6 @@
 //===========
 //* Варіант 1
 //===========
-let counterValue = 0;
 
 const btnDecrEl = document.querySelector('button[data-action = "decrement"]');
 const btnIncrEl = document.querySelector('button[data-action = "increment"]');
@@ -9,6 +8,8 @@ const spanValueEl = document.querySelector("#value");
 
 btnDecrEl.addEventListener("click", onBtnClickDecr);
 btnIncrEl.addEventListener("click", onBtnClickIncr);
+
+let counterValue = 0;
 
 function onBtnClickDecr() {
   counterValue += Number(btnDecrEl.textContent);
@@ -23,7 +24,6 @@ function onBtnClickIncr() {
 //===========
 //* Варіант 2
 //===========
-// let counterValue = 0;
 
 // const refs = {
 //   btnDecrEl: document.querySelector('button[data-action = "decrement"]'),
@@ -33,6 +33,8 @@ function onBtnClickIncr() {
 
 // refs.btnDecrEl.addEventListener("click", onBtnClickDecr);
 // refs.btnIncrEl.addEventListener("click", onBtnClickIncr);
+
+// let counterValue = 0;
 
 // function onBtnClickDecr() {
 //   counterValue -= 1;
