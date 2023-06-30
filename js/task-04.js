@@ -25,19 +25,21 @@ function onBtnClickIncr() {
 //===========
 // let counterValue = 0;
 
-// const btnDecrEl = document.querySelector('button[data-action = "decrement"]');
-// const btnIncrEl = document.querySelector('button[data-action = "increment"]');
-// const spanValueEl = document.querySelector("#value");
+// const refs = {
+//   btnDecrEl: document.querySelector('button[data-action = "decrement"]'),
+//   btnIncrEl: document.querySelector('button[data-action = "increment"]'),
+//   spanValueEl: document.querySelector("#value"),
+// };
 
-// btnDecrEl.addEventListener("click", onBtnClickDecr);
-// btnIncrEl.addEventListener("click", onBtnClickIncr);
+// refs.btnDecrEl.addEventListener("click", onBtnClickDecr);
+// refs.btnIncrEl.addEventListener("click", onBtnClickIncr);
 
 // function onBtnClickDecr() {
 //   counterValue -= 1;
-//   spanValueEl.textContent = counterValue;
+//   refs.spanValueEl.textContent = counterValue;
 // }
 
 // function onBtnClickIncr() {
 //   counterValue += 1;
-//   spanValueEl.textContent = counterValue;
+//   refs.spanValueEl.textContent = counterValue;
 // }
