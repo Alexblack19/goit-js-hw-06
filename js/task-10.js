@@ -23,9 +23,27 @@ refs.btnCreateEl.addEventListener("click", () => {
   return createBoxes(inputValue);
 });
 
-function createBoxes(amount) {  
-  console.log(amount);
+function createBoxes(amount) {
+  if (amount < min || amount > max) {
+    alert("Enter a value between 1 and 100");
+    return;
+  }
+
+  const divElArr = [];
+  let sizeBox = 30;
+  for (let i = 0; i < amount; i += step) {
+    const divEl = `<div style = "width: ${sizeBox}px; height: ${sizeBox}px; background-color:${getRandomHexColor()}"></div>`;
+    divElArr.push(divEl);
+    sizeBox += 10;
+  }
+  refs.divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
 }
+
+function destroyBoxes() {
+  refs.divBoxesEl.innerHTML = "";
+  refs.inputEl.value = "";
+}
+refs.btnDestroyEl.addEventListener("click", destroyBoxes);
 
 // let amount = Number(refs.inputEl.value);
 // console.log(amount);
