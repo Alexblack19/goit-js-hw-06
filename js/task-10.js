@@ -33,10 +33,11 @@ function createBoxes(amount) {
   const divElArr = [];
   let sizeBox = 30;
   for (let i = 0; i < amount; i += step) {
-    const divEl = `<div style = "width: ${sizeBox}px; height: ${sizeBox}px; background-color:${getRandomHexColor()}"></div>`;
+    const divEl = `<div style = "width: ${sizeBox}px; height: ${sizeBox}px; background-color: ${getRandomHexColor()}; display: flex; justify-content: center; align-items: center"><img src = 'https://cdn.pixabay.com/photo/2020/12/07/18/21/cat-5812490_1280.jpg' style = "width: 100%"></div>`;
     divElArr.push(divEl);
     sizeBox += 10;
   }
+  console.log(...divElArr);
   divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
 }
 
