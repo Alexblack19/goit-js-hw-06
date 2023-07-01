@@ -18,7 +18,7 @@ const divElArr = [];
 console.log(divElArr);
 
 function createBoxes(amount) {
-  console.log(amount);
+  console.log("amount:", amount);
   for (let i = 0; i < amount; i += 1) {
     const divEl = document.createElement("div");
     divElArr.push(divEl);
