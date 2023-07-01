@@ -9,7 +9,7 @@ const btnCreateEl = document.querySelector("button[data-create]");
 const btnDestroyEl = document.querySelector("button[data-destroy]");
 const divboxes = document.querySelector("#boxes");
 
-btnCreateEl.addEventListener("click", () => {
+btnCreateEl.addEventListener("click", () => {  
   const inputValue = Number(inputEl.value);
   return createBoxes(inputValue);
 });
