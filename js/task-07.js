@@ -4,5 +4,5 @@ const spanEl = document.querySelector("#text");
 function changeSize() {
   spanEl.style.fontSize = `${inputRangeEl.value}px`;
 }
-inputRangeEl.addEventListener("change", changeSize);
+inputRangeEl.addEventListener("input", changeSize);
 changeSize();
