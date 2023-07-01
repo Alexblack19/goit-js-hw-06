@@ -20,29 +20,11 @@ console.log(divElArr);
 function createBoxes(amount) {
   console.log("amount:", amount);
   for (let i = 0; i < amount; i += 1) {
-    const divEl = document.createElement("div");
-    divElArr.push(divEl);
+    const divEl = document.createElement("div");   
+    divElArr.push(divEl);    
   }
+  divboxes.append(...divElArr);
 }
-
-divboxes.append(divElArr.join(""));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -79,13 +61,13 @@ divboxes.append(divElArr.join(""));
 
 // console.log(boxes);
 // // считываем введенное число
- 
+
 //   const handleClick = () => {
 //     let amount = Number(refs.input.value);
-    
+
 //     console.log("Button was clicked");
 //     if (amount < inputOption.min || amount > inputOption.max) { alert("min=1, max=100"); return };
-//     // создаем и добавляем DIV 
+//     // создаем и добавляем DIV
 //     const boxArr = [];
 //     const size = 30;
 //     for (let i = 0; i < amount; i += inputOption.step) {
@@ -94,18 +76,18 @@ divboxes.append(divElArr.join(""));
 //       const boxesEl = `<div style="width:${growingSize > 70 ? 70 : growingSize}px; height:${growingSize}px; background-color:${createRGB()}"></div>`;
 //       boxArr.push(boxesEl);
 //       console.log(refs.boxes);
-//       // console.log(boxesEl); 
+//       // console.log(boxesEl);
 //     };
 //     refs.boxes.insertAdjacentHTML("beforeend", boxArr.join(''));
 //   };
-  
+
 //   refs.createBtn.addEventListener("click", handleClick);
 
-//   // удаляем 
+//   // удаляем
 //   const destroyBoxes = () => {
 //     refs.boxes.innerHTML = '';
 //     refs.input.value = '';
-    
+
 //   };
 // refs.destroyBtn.addEventListener("click", destroyBoxes);
 
