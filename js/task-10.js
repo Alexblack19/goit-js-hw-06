@@ -10,16 +10,17 @@ const refs = {
   btnDestroyEl: document.querySelector("[data-destroy]"),
   divBoxesEl: document.querySelector("#boxes"),
 };
+const { inputEl, btnCreateEl, btnDestroyEl, divBoxesEl } = refs;
 
 const inputAttr = {
-  min: Number(refs.inputEl.min),
-  max: Number(refs.inputEl.max),
-  step: Number(refs.inputEl.step),
+  min: Number(inputEl.min),
+  max: Number(inputEl.max),
+  step: Number(inputEl.step),
 };
 const { min, max, step } = inputAttr;
 
-refs.btnCreateEl.addEventListener("click", () => {
-  const inputValue = Number(refs.inputEl.value);
+btnCreateEl.addEventListener("click", () => {
+  const inputValue = Number(inputEl.value);
   return createBoxes(inputValue);
 });
 
@@ -36,11 +37,11 @@ function createBoxes(amount) {
     divElArr.push(divEl);
     sizeBox += 10;
   }
-  refs.divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
+  divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
 }
 
 function destroyBoxes() {
-  refs.divBoxesEl.innerHTML = "";
-  refs.inputEl.value = "";
+  divBoxesEl.innerHTML = "";
+  inputEl.value = "";
 }
-refs.btnDestroyEl.addEventListener("click", destroyBoxes);
+btnDestroyEl.addEventListener("click", destroyBoxes);

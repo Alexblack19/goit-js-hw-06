@@ -25,7 +25,6 @@ const imagesArr = images
   })
   .join(" ");
 listEl.insertAdjacentHTML("beforeend", imagesArr);
-console.log(imagesArr);
 
 //===========
 //* Варіант 2
