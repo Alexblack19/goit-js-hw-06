@@ -11,22 +11,22 @@ const refs = {
   divBoxesEl: document.querySelector("#boxes"),
 };
 
-console.log(refs.btnCreateEl);
+console.dir(refs.btnCreateEl.textContent);
 
 
-btnCreateEl.addEventListener("click", () => {
-  const inputValue = Number(inputEl.value);
-  return createBoxes(inputValue);
-});
+// btnCreateEl.addEventListener("click", () => {
+//   const inputValue = Number(inputEl.value);
+//   return createBoxes(inputValue);
+// });
 
-function createBoxes(amount) {
-  const divElArr = [];
-  for (let i = 0; i < amount; i += 1) {
-    const divEl = document.createElement("div");
-    divElArr.push(divEl);
-  }
-  divboxes.append(...divElArr);
-}
+// function createBoxes(amount) {
+//   const divElArr = [];
+//   for (let i = 0; i < amount; i += 1) {
+//     const divEl = document.createElement("div");
+//     divElArr.push(divEl);
+//   }
+//   divboxes.append(...divElArr);
+// }
 
 //============================================================
 
