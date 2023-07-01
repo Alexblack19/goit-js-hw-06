@@ -14,8 +14,8 @@ function onInputBlur() {
     : changeClass("invalid", "valid");
 
   function changeClass(first, second) {
-    inputEl.classList.remove(second);
     inputEl.classList.add(first);
+    inputEl.classList.remove(second);
   }
 }
 //============
