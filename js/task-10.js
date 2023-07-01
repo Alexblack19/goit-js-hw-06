@@ -27,4 +27,4 @@ function createBoxes(amount) {
   }
 }
 
-divboxes.append(...divElArr);
+divboxes.append(divElArr.join(''));
