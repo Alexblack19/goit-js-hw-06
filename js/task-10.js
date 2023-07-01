@@ -11,8 +11,24 @@ const refs = {
   divBoxesEl: document.querySelector("#boxes"),
 };
 
-console.dir(refs.btnCreateEl.textContent);
+const inputAttr = {
+  min: Number(refs.inputEl.min),
+  max: Number(refs.inputEl.max),
+  step: Number(refs.inputEl.step),
+};
+const { min, max, step } = inputAttr;
 
+refs.btnCreateEl.addEventListener("click", () => {
+  const inputValue = Number(refs.inputEl.value);
+  return createBoxes(inputValue);
+});
+
+function createBoxes(amount) {  
+  console.log(amount);
+}
+
+// let amount = Number(refs.inputEl.value);
+// console.log(amount);
 
 // btnCreateEl.addEventListener("click", () => {
 //   const inputValue = Number(inputEl.value);

@@ -267,6 +267,16 @@ function getRandomHexColor() {
 
 Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
 //
+//================================================
+//** Додатковий генератор кольорів RGB *//
+//* (від ментора з додaткового заняття) *//
+const createRGB = () => {
+const red = Math.round(Math.random(0, 1) * 255);
+const green = Math.round(Math.random(0, 1) * 255);
+const blue = Math.round(Math.random(0, 1) * 255);
+return `rgb(${red},${green}, ${blue})`;
+};
+console.log(createRGB());
 ========================================
 ========================================
 Від ментора Vladyslav Apelhants в Slack 
