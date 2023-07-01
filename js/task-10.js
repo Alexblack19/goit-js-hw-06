@@ -21,17 +21,8 @@ function createBoxes(amount) {
   console.log(amount);
   for (let i = 0; i < amount; i += 1) {
     const divEl = document.createElement("li");
-    divElArr.push(divEl);
-    // console.log(divEl);
+    divElArr.push(divEl);    
   }
 }
 
 divboxes.append(...divElArr);
-//
-// const liArr = [];
-// for (let i = 0; i < 5; i++) {
-//   const item = document.createElement("div");
-//   liArr.push(item);
-// }
-// console.log(liArr);
-// divboxes.append(...liArr);
