@@ -5,11 +5,12 @@ function getRandomHexColor() {
 }
 
 const inputEl = document.querySelector('[type="number"]');
+
 const btnCreateEl = document.querySelector("button[data-create]");
 const btnDestroyEl = document.querySelector("button[data-destroy]");
 const divboxes = document.querySelector("#boxes");
 
-btnCreateEl.addEventListener("click", () => {  
+btnCreateEl.addEventListener("click", () => {
   const inputValue = Number(inputEl.value);
   return createBoxes(inputValue);
 });
@@ -26,3 +27,15 @@ function createBoxes(amount) {
 }
 
 divboxes.append(...divElArr);
+
+
+
+
+
+
+
+// console.log(inputEl.min); // 1
+// console.log(inputEl.max); // 100
+// console.log(inputEl.step); // 1
+
+
