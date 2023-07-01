@@ -15,13 +15,13 @@ btnCreateEl.addEventListener("click", () => {
 });
 
 const divElArr = [];
-console.log(...divElArr);
+console.log(divElArr);
 
 function createBoxes(amount) {
   console.log(amount);
   for (let i = 0; i < amount; i += 1) {
-    const divEl = document.createElement("li");
-    divElArr.push(divEl);    
+    const divEl = document.createElement("div");
+    divElArr.push(divEl);
   }
 }
 
