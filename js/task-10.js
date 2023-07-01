@@ -10,10 +10,8 @@ const btnDestroyEl = document.querySelector("button[data-destroy]");
 const divboxes = document.querySelector("#boxes");
 
 btnCreateEl.addEventListener("click", () => {
-  for (let i = inputEl.min; i < inputEl.max; i += inputEl.step) {
-    const inputValue = Number(inputEl.value);
-    return createBoxes(inputValue);
-  }
+  const inputValue = Number(inputEl.value);
+  return createBoxes(inputValue);
 });
 
 const divElArr = [];
@@ -27,4 +25,4 @@ function createBoxes(amount) {
   }
 }
 
-divboxes.append(divElArr.join(''));
+divboxes.append(divElArr.join(""));
