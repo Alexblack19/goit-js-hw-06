@@ -40,8 +40,9 @@ function createBoxes(amount) {
   divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
 }
 
+btnDestroyEl.addEventListener("click", destroyBoxes);
+
 function destroyBoxes() {
   divBoxesEl.innerHTML = "";
   inputEl.value = "";
 }
-btnDestroyEl.addEventListener("click", destroyBoxes);
