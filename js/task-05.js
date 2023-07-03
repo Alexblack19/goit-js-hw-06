@@ -3,4 +3,8 @@ const textOutput = document.querySelector("#name-output");
 
 textInput.addEventListener("input", (event) => {
   textOutput.textContent = event.currentTarget.value.trim();
+
+  // if ((event.currentTarget.value = "")) {
+  //   textOutput.textContent = "Anonymous";
+  // }
 });

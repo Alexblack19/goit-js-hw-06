@@ -37,7 +37,6 @@ function createBoxes(amount) {
     divElArr.push(divEl);
     sizeBox += 10;
   }
-  console.log(...divElArr);
   divBoxesEl.insertAdjacentHTML("beforeend", divElArr.join(""));
 }
 
